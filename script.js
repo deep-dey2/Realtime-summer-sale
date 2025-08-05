@@ -14,4 +14,5 @@ const handleClick = (data) => {
   const li = document.createElement("li");
   li.innerText = name;
   nameList.appendChild(li);
+ 
 };
