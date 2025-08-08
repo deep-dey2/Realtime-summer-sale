@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Without DOMContententLoaded</title>
 </head>
 <body>
     <!DOCTYPE html>
@@ -308,10 +308,11 @@
             <input
               type="text"
               placeholder="Coupone code"
-              class="py-2 px-2 outline-none border border-gray-400 rounded-l-lg"
+              class="py-2 px-2 outline-none border border-gray-400 rounded-l-lg" id="inputcopon"
             />
             <button
-           class="bg-pink-500 px-4 text-white rounded-r-md cursor-pointer"
+           class="bg-pink-500 px-4 text-white rounded-r-md disabled:opacity-30"
+           id="apply"
             >
               Apply
             </button>
@@ -330,23 +331,23 @@
             </li>
             <li class="font-semibold">
               Discount :
-              <span class="text-gray-400 font-normal ml-1">00</span>Tk
+              <span id="discount" class="text-gray-400 font-normal ml-1">00</span>Tk
             </li>
             <li class="font-semibold" >
               Total:
               <span id="discountTotal" class="text-gray-400 font-normal ml-1">00</span>Tk
             </li>
           </ul>
-          <button
-            class="text-[14px] px-4 bg-[#E527B2] py-1.5 border-[#E527B2] text-white rounded-md cursor-pointer border font-semibold w-full mt-5"
+          <button id="Make"
+            class="text-[14px] px-4 bg-[#E527B2] py-1.5 border-[#E527B2] text-white rounded-md cursor-pointer border font-semibold w-full mt-5 disabled:opacity-30"
           >
             Make Purchase
           </button>
         </div>
       </div>
     </section>
+
     <script src="./script.js"></script>
-    <script src="index.js"></script>
   </body>
 </html>
 </body>
